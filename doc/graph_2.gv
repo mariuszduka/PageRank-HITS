@@ -1,0 +1,37 @@
+digraph finite_state_machine {
+
+	node [shape = doublecircle style = filled color = black]
+	1 [fillcolor = orange1 fontcolor = black]
+	2 [fillcolor = orange1 fontcolor = black]
+	3 [fillcolor = orange1 fontcolor = black]
+	9 [fillcolor = orange1 fontcolor = black]
+
+	4 [fillcolor = seagreen fontcolor = white]
+	5 [fillcolor = seagreen fontcolor = white]
+	6 [fillcolor = seagreen fontcolor = white]
+	7 [fillcolor = seagreen fontcolor = white]  
+	8 [fillcolor = seagreen fontcolor = white]    
+
+	10 [fillcolor = "#2e8b5060" fontcolor = black]    
+	11 [fillcolor = "#2e8b5060" fontcolor = black]    
+
+	node [shape = circle style = filled]
+
+	1 -> 2
+	1 -> 4
+	1 -> 6
+	1 -> 8
+	2 -> 4
+	2 -> 5
+	2 -> 7
+	3 -> 5
+	3 -> 6
+	3 -> 7
+	3 -> 8
+	7 -> 8
+	9 -> 7
+	9 -> 10
+	9 -> 11
+	12 [fillcolor = grey fontcolor = black]
+	10 -> 12
+}
